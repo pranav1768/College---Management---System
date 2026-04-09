@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5f6fa;
+  color: #1a1a2e;
+  font-size: 14px;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+  background: #1a1a2e;
+  min-height: 100vh;
+  padding-top: 0;
+  position: fixed;
+  top: 0; left: 0;
+  width: 200px;
+  z-index: 100;
+}
+
+.sidebar h4 {
+  color: #fff !important;
+  text-align: center !important;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 24px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.sidebar a {
+  display: block;
+  color: rgba(255,255,255,.55) !important;
+  text-decoration: none !important;
+  padding: 11px 20px;
+  font-size: .82rem;
+  font-weight: 500;
+  border-left: 2px solid transparent;
+  transition: all .15s ease;
+}
+
+.sidebar a:hover {
+  color: #fff !important;
+  background: rgba(255,255,255,.05);
+  border-left-color: #6c8aff;
+}
+
+/* ── CONTENT OFFSET ── */
+.col-md-10, .col-md-10.content {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  padding: 0;
+}
+
+/* ── NAVBAR ── */
+.navbar.bg-dark {
+  background: #fff !important;
+  border-bottom: 1px solid #e8eaf0;
+  padding: 14px 24px;
+  box-shadow: none;
+}
+
+.navbar .navbar-brand {
+  color: #1a1a2e !important;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+
+/* ── PAGE CONTENT ── */
+.container.mt-4 {
+  padding: 24px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+/* ── STAT CARDS ── */
+.card {
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: 0 1px 6px rgba(0,0,0,.07) !important;
+}
+
+.card.bg-primary { background: #3a5ccc !important; }
+.card.bg-success  { background: #2a9d8f !important; }
+.card.bg-warning  { background: #e9a825 !important; color: #fff !important; }
+
+.card-body { padding: 22px 20px !important; }
+
+.card-body h4 {
+  font-size: .72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .1em !important;
+  text-transform: uppercase !important;
+  opacity: .8;
+  margin-bottom: 8px;
+}
+
+.card-body h2 {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  color: inherit !important;
+  line-height: 1;
+  margin: 0;
+}
+
+.card-body p { font-size: .82rem; opacity: .85; margin: 0; }
+
+/* ── FORM BOX ── */
+.form-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 28px 32px;
+  max-width: 560px;
+  border: 1px solid #e8eaf0;
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+}
+
+label {
+  display: block;
+  font-size: .75rem;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border: 1px solid #dde1eb !important;
+  border-radius: 7px !important;
+  padding: 9px 13px !important;
+  font-size: .88rem !important;
+  background: #fafbfc !important;
+  color: #1a1a2e !important;
+  font-family: 'Inter', sans-serif !important;
+  transition: border .15s, box-shadow .15s !important;
+}
+
+.form-control:focus {
+  border-color: #3a5ccc !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 3px rgba(58,92,204,.12) !important;
+  outline: none !important;
+}
+
+/* ── BUTTONS ── */
+.btn {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: .82rem !important;
+  border-radius: 7px !important;
+  padding: 8px 18px !important;
+  border: none !important;
+  transition: opacity .15s, transform .15s !important;
+}
+
+.btn:hover { opacity: .88; transform: translateY(-1px); }
+
+.btn-primary   { background: #3a5ccc !important; color: #fff !important; }
+.btn-success   { background: #2a9d8f !important; color: #fff !important; }
+.btn-secondary { background: #e8eaf0 !important; color: #444 !important; }
+.btn-warning   { background: #e9a825 !important; color: #fff !important; }
+.btn-danger    { background: #e05252 !important; color: #fff !important; }
+
+/* ── TABLE ── */
+#table {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,.07);
+  border-collapse: separate !important;
+  border: none !important;
+}
+
+.table thead th {
+  background: #1a1a2e !important;
+  color: rgba(255,255,255,.85) !important;
+  font-size: .7rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .1em !important;
+  text-transform: uppercase !important;
+  padding: 13px 16px !important;
+  border: none !important;
+}
+
+.table tbody td {
+  padding: 12px 16px !important;
+  border: none !important;
+  border-bottom: 1px solid #f0f2f8 !important;
+  font-size: .85rem;
+  color: #333;
+  vertical-align: middle !important;
+}
+
+.table tbody tr:last-child td { border-bottom: none !important; }
+.table tbody tr:hover { background: #f8f9ff !important; }
+.table-striped tbody tr:nth-of-type(even) { background: #fafbfc !important; }
+
+/* Search */
+#search {
+  border: 1px solid #dde1eb !important;
+  border-radius: 7px !important;
+  padding: 9px 13px !important;
+  font-size: .85rem !important;
+  background: #fff !important;
+  max-width: 280px;
+  box-shadow: none !important;
+}
+
+#search:focus {
+  border-color: #3a5ccc !important;
+  box-shadow: 0 0 0 3px rgba(58,92,204,.12) !important;
+}
+
+/* ── ALERTS ── */
+.alert { border: none !important; border-radius: 7px !important; font-size: .85rem !important; padding: 12px 16px !important; }
+.alert-success { background: #eaf7f5 !important; color: #2a9d8f !important; border-left: 3px solid #2a9d8f !important; }
+.alert-danger  { background: #fdf0f0 !important; color: #e05252 !important; border-left: 3px solid #e05252 !important; }
+
+/* ── LOGIN ── */
+body.login-bg {
+  background: #f5f6fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid #e8eaf0;
+  box-shadow: 0 4px 24px rgba(0,0,0,.07);
+}
+
+.login-card h3 { font-size: 1.1rem; font-weight: 600; color: #1a1a2e; margin-bottom: 24px; }
+.login-card .btn-primary { padding: 10px !important; }
+
+/* ── FOOTER ── */
+.footer {
+  color: #aaa;
+  font-size: .75rem;
+  padding: 20px;
+  border-top: 1px solid #e8eaf0;
+  margin-top: 32px;
+  background: #fff;
+  text-align: center;
+}
