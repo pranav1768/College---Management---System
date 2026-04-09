@@ -207,6 +207,7 @@ College Management System © 2026
 </div>
 
 </div>
+
 </div>
 </body>
 </html>
