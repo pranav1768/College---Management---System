@@ -95,7 +95,6 @@ class="btn btn-primary">
 </div>
 
 </div>
-
 </div>
 </div>
 </div>
