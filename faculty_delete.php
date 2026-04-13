@@ -10,5 +10,4 @@ $conn,
 );
 
 header("location:faculty_view.php");
-
 ?>
