@@ -79,7 +79,6 @@ echo "</tr>";
 
 </div>
 
-
 <script>
 
 function confirmDelete(){
