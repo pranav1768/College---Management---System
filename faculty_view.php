@@ -117,6 +117,7 @@ tr[i].style.display = "";
 } else {
 
 tr[i].style.display = "none";
+
 }
 
 }
