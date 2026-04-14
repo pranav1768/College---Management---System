@@ -118,6 +118,7 @@ tr[i].style.display = "";
 
 tr[i].style.display = "none";
 }
+
 }
 
 }
